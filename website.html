@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Lessons</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        #carouselExample {
+            text-align: center;
+        }
+
+        img {
+            width: 80vw;
+        }
+
+        card{
+            width:18rem;
+            overflow-x:hidden;
+        }
+        
+        .card > img {
+            height: 400px;
+            width: auto;
+            overflow-x: hidden;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md bg-info">
+
+        </nav>
+    </header>
+
+    <main>
+
+        <h1 class="display-4 text-center my-5">
+            Hello World!
+        </h1>
+
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/kids1.jpg" class="d-block w-80" alt="kids">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/kids2.jpg" class="d-block w-80" alt="kids">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/kids3.jpg" class="d-block w-80" alt="kids">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <h1 class="display-4 text-center my-5">
+            Some Cards
+        </h1>
+
+        <div class="container">
+            <div class="row m-5 align-items-center justify-content-center">
+                <div class="col-lg-4 col-6 col-xl-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/dog1.jpg" alt="dog">
+                        <div class="card-body">
+                            <h5 class="card-title">Shar-Pei</h5>
+                            <div class="card-text">Bilbo</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6 col-xl-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/dog2.jpg" alt="dog">
+                        <div class="card-body">
+                            <h5 class="card-title">Schnauzer</h5>
+                            <div class="card-text">Lickity-Split</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6 col-xl-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/dog3.jpg" alt="dog">
+                        <div class="card-body">
+                            <h5 class="card-title">Terrier and Corgi</h5>
+                            <div class="card-text">Regina and Herschel</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6 col-xl-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/dog4.jpg" alt="dog">
+                        <div class="card-body">
+                            <h5 class="card-title">Poodle and Black Lab</h5>
+                            <div class="card-text">Homer and Onyx</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6 col-xl-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/dog5.jpg" alt="dog">
+                        <div class="card-body">
+                            <h5 class="card-title">Husky</h5>
+                            <div class="card-text">Bandit</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6 col-xl-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/dog6.jpg" alt="dog">
+                        <div class="card-body">
+                            <h5 class="card-title">Yellow Lab</h5>
+                            <div class="card-text">Barney</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h1 class="display-4 text-center my-5">
+            FAQ
+        </h1>
+
+        <div class="accordion" id="accordionExample">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1"
+                        data-bs-parent="#accordionExample">item 1</button>
+                </h2>
+            </div>
+            <div id="collapse1" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p>This is some text for the accordion.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2"
+                        data-bs-parent="#accordionExample">item 2</button>
+                </h2>
+            </div>
+            <div id="collapse2" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p>This is some text for the accordion.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3"
+                        data-bs-parent="#accordionExample">item
+                        3</button>
+                </h2>
+            </div>
+            <div id="collapse3" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <p>This is some text for the accordion.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-md">
+            <div class="text-center">
+                <h1 class="display-4 text-center">Get in touch</h1>
+                <p class="lead mb-5">Ask a question</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <form>
+                <label for="emailExample" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="exampleEmail" placeholder="belle@bottoms.com"
+                    class="form-control" required>
+
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Belle Bottoms" class="form-control"
+                    required>
+
+                <label for="subject" class="form-label">Subject:</label>
+                <textarea id="Subject" class="form-control mb-5" placeholder="What can we do you fer?"
+                    style="height:140px;"></textarea>
+
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container-fluid bg-info text-center">Hello World!</div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
